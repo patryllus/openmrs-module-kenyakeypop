@@ -49,7 +49,7 @@ public class KpMetadata extends AbstractMetadataBundle {
 		
 		public static final String KP_CLIENT_DISCONTINUATION = "d7142400-2495-11e9-ab14-d663bd873d93";
 		
-		public static final String KP_OVERDOSE_SCREENING = "c3fb7831-f8fc-4b71-bd54-f23cdd77e305";
+		public static final String KP_PEER_OVERDOSE_REPORTING = "c3fb7831-f8fc-4b71-bd54-f23cdd77e305";
 		
 		public static final String KP_CLIENT_HIV_STATUS = "999792ec-8854-11e9-bc42-526af7764f64";
 		
@@ -142,7 +142,7 @@ public class KpMetadata extends AbstractMetadataBundle {
 		    KpMetadata._EncounterType.KP_DIAGNOSIS_TREATMENT));
 		
 		install(encounterType("KP Peer Overdose screening", "Handles KP Peer Overdose screening",
-		    KpMetadata._EncounterType.KP_OVERDOSE_SCREENING));
+		    KpMetadata._EncounterType.KP_PEER_OVERDOSE_REPORTING));
 		
 		install(encounterType("KP STI treatment", "Handles KP STI treatment", KpMetadata._EncounterType.KP_STI_TREATMENT));
 		install(encounterType("KP STI Detailed treatment", "Handles KP STI Detailed treatment",
@@ -180,8 +180,8 @@ public class KpMetadata extends AbstractMetadataBundle {
 		install(form("Diagnosis and Treatment Plan", null, KpMetadata._EncounterType.KP_DIAGNOSIS_TREATMENT, "1",
 		    KpMetadata._Form.KP_DIAGNOSIS_TREATMENT_FORM));
 		
-		install(form("Drug Overdose Screening", null, KpMetadata._EncounterType.KP_OVERDOSE_SCREENING, "1",
-		    KpMetadata._Form.KP_OVERDOSE_SCREENING_FORM));
+		install(form("KP PeerOverdose Screening", null, KpMetadata._EncounterType.KP_PEER_OVERDOSE_REPORTING, "1",
+		    KpMetadata._Form.KP_PEER_OVERDOSE_REPORTING_FORM));
 		
 		install(form("STI Treatment", "Form for adding STI treatment details",
 		    KpMetadata._EncounterType.KP_STI_DETAILED_TREATMENT, "1", KpMetadata._Form.KP_STI_TREATMENT_FORM));
